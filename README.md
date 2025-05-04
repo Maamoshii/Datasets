@@ -59,7 +59,15 @@ array(['Flow ID', 'Src IP', 'Src Port', 'Dst IP', 'Dst Port', 'Protocol',
        'Active Std', 'Active Max', 'Active Min', 'Idle Mean', 'Idle Std',
        'Idle Max', 'Idle Min', 'Attack Name', 'Label'], dtype=object)
 ```
-<p>Array kolom di atas menunjukkan semua fitur (variabel) yang tersedia dalam dataset gabungan datjoin, yang terdiri dari hasil penggabungan dua file CSV: "MQTT DDoS Publish Flood.csv" dan "MQTT DoS Publish Flood.csv". Kolom-kolom ini mencakup berbagai parameter jaringan yang umum digunakan dalam analisis trafik dan deteksi serangan, seperti informasi IP dan port sumber/tujuan, ukuran dan durasi aliran data, statistik interval antar paket (IAT), flag protokol TCP (seperti SYN, ACK, FIN), hingga data agregat seperti packet size, segment size, dan bulk rate. Kolom Attack Name menunjukkan jenis serangan yang terjadi, sementara Label kemungkinan berisi nilai biner atau kategori yang menandai apakah trafik tersebut merupakan serangan atau bukan</p>
+<p>Array kolom di atas menunjukkan semua fitur (variabel) yang tersedia dalam dataset gabungan datjoin, yang terdiri dari hasil penggabungan dua file CSV: "MQTT DDoS Publish Flood.csv" dan "MQTT DoS Publish Flood.csv".</p>
+
+```python
+x = datjoin.iloc[:,9:55]
+x
+y = datjoin.iloc[:,83]
+y
+```
+<p>Kode ini digunakan untuk memisahkan fitur dan label dari dataset datjoin, sebagai persiapan untuk proses pelatihan model machine learning. Variabel x diisi dengan data dari kolom ke-10 hingga ke-55 (iloc[:, 9:55]), yang berisi berbagai fitur jaringan seperti ukuran paket, durasi aliran, dan flag TCP yang akan digunakan sebagai input bagi model. Sementara itu, variabel y diisi dengan kolom ke-84 (iloc[:, 83]), yang berfungsi sebagai target output. Pemisahan ini merupakan langkah penting dalam supervised learning untuk memungkinkan model mempelajari hubungan antara fitur dan target.</p>
 
 ```python
 
