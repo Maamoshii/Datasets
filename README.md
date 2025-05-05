@@ -14,8 +14,7 @@ from sklearn import metrics
 <p>
   Kode di atas merupakan tahap awal dalam proyek analisis data menggunakan Python, di mana berbagai library penting diimpor untuk menjalankan proses tersebut. Library <span style="color:blue;"><strong>pandas</strong></span> digunakan untuk manipulasi dan analisis data dalam bentuk tabel (DataFrame), sedangkan <span style="color:blue;"><strong>matplotlib.pyplot</strong></span> dan <span style="color:blue;"><strong>seaborn</strong></span> digunakan untuk visualisasi data, dengan Seaborn memberikan tampilan grafik yang lebih menarik. 
   <span style="color:blue;"><strong>numpy</strong></span> digunakan untuk operasi numerik dan array. Selanjutnya, dari library <span style="color:blue;"><strong>scikit-learn</strong></span> diimpor beberapa modul penting, seperti <span style="color:green;"><code>train_test_split</code></span> untuk membagi dataset menjadi data latih dan data uji, 
-  <span style="color:green;"><code>DecisionTreeClassifier</code></span> untuk membangun model klasifikasi berbasis pohon keputusan, serta modul <span style="color:green;"><code>metrics</code></span> dan <span style="color:green;"><code>accuracy_score</code></span> yang digunakan untuk mengevaluasi performa model, seperti mengukur akurasi dan membuat confusion matrix. 
-  Secara keseluruhan, impor ini mempersiapkan seluruh fondasi yang dibutuhkan untuk proses pemodelan, pelatihan, pengujian, dan evaluasi data secara lengkap dalam proyek <em>machine learning</em>.
+  <span style="color:green;"><code>DecisionTreeClassifier</code></span> untuk membangun model klasifikasi berbasis pohon keputusan, serta modul <span style="color:green;"><code>metrics</code></span> dan <span style="color:green;"><code>accuracy_score</code></span> yang digunakan untuk mengevaluasi performa model, seperti mengukur akurasi.
 </p>
 
 ---
